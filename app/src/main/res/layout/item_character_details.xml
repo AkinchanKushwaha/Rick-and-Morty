@@ -34,7 +34,7 @@
                 android:layout_marginTop="4dp"
                 android:fontFamily="@font/font_main"
                 android:gravity="start"
-                android:text="Light House Keeper"
+                tools:text="Light House Keeper"
                 android:textColor="@color/colorLight"
                 android:textSize="16sp"
                 android:textStyle="bold" />
@@ -43,7 +43,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="12dp"
                 android:gravity="center|start"
                 android:orientation="horizontal">
 
@@ -62,7 +62,8 @@
                     android:fontFamily="@font/font_main"
                     android:text="Alive"
                     android:textColor="@color/colorLight"
-                    android:textSize="10sp" />
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp" />
 
                 <View
                     android:layout_width="6dp"
@@ -77,9 +78,84 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:fontFamily="@font/font_main"
-                    android:text="Alive"
                     android:textColor="@color/colorLight"
-                    android:textSize="10sp" />
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp"
+                    tools:text="Alive" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_main"
+                    android:text="@string/gender"
+                    android:textColor="@color/colorLight"
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp" />
+
+                <View
+                    android:layout_width="6dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:background="@color/colorLight" />
+
+                <TextView
+                    android:id="@+id/tv_character_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/font_main"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorLight"
+                    tools:ignore="SmallSp"
+                    tools:text="Female" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/font_main"
+                    android:text="Origin"
+                    android:textColor="@color/colorLight"
+                    android:textSize="10sp"
+                    tools:ignore="SmallSp" />
+
+                <View
+                    android:layout_width="6dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:background="@color/colorLight" />
+
+                <TextView
+                    android:id="@+id/tv_character_origin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/font_main"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorLight"
+                    tools:ignore="SmallSp"
+                    tools:text="Earth" />
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>

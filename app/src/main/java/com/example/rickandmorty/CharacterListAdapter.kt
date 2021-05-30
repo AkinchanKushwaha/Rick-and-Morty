@@ -35,6 +35,8 @@ class CharacterListAdapter(
                 .into(holder.itemView.iv_character_image)
             holder.itemView.tv_character_species.text = list[position].species
             holder.itemView.tv_character_status.text = list[position].status
+            holder.itemView.tv_character_origin.text = list[position].origin.name
+            holder.itemView.tv_character_gender.text = list[position].gender
 
             // TODO change the color of iv_character_status according to the status.
         }

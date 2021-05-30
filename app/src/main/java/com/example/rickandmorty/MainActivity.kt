@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun getData() {
+
         val retrofitBuilder = Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
             .baseUrl(Constants.BASE_URL)
