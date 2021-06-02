@@ -5,4 +5,5 @@ object Constants {
     const val ALIVE = "Alive"
     const val DEAD = "Dead"
     const val UNKNOWN = "Unknown"
+    const val MAX_NUMBER_OF_PAGES = 34
 }
