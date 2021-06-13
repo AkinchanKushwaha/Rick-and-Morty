@@ -4,6 +4,7 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat.getColor
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.rickandmorty.models.Result
@@ -38,7 +39,33 @@ class CharacterListAdapter(
             holder.itemView.tv_character_origin.text = list[position].origin.name
             holder.itemView.tv_character_gender.text = list[position].gender
 
-            // TODO change the color of iv_character_status according to the status.
+
+            when (list[position].status) {
+                Constants.ALIVE -> holder.itemView.cv_character_status.setBackgroundColor(
+                    getColor(
+                        context,
+                        R.color.green
+                    )
+                )
+                Constants.DEAD -> holder.itemView.cv_character_status.setBackgroundColor(
+                    getColor(
+                        context,
+                        R.color.red
+                    )
+                )
+                Constants.UNKNOWN -> holder.itemView.cv_character_status.setBackgroundColor(
+                    getColor(
+                        context,
+                        R.color.grey
+                    )
+                )
+                else -> holder.itemView.cv_character_status.setBackgroundColor(
+                    getColor(
+                        context,
+                        R.color.grey
+                    )
+                )
+            }
         }
     }
 

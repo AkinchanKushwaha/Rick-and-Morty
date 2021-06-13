@@ -47,12 +47,12 @@
                 android:gravity="center|start"
                 android:orientation="horizontal">
 
-                <ImageView
-                    android:id="@+id/iv_character_status"
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cv_character_status"
                     android:layout_width="9dp"
                     android:layout_height="9dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/shape_circle_character_status" />
+                    android:background="@color/red"
+                    app:cardCornerRadius="10dp" />
 
                 <TextView
                     android:id="@+id/tv_character_status"
@@ -60,7 +60,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:fontFamily="@font/font_main"
-                    android:text="Alive"
+                    android:text="@string/alive"
                     android:textColor="@color/colorLight"
                     android:textSize="10sp"
                     tools:ignore="SmallSp" />
@@ -134,7 +134,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/font_main"
-                    android:text="Origin"
+                    android:text="@string/origin"
                     android:textColor="@color/colorLight"
                     android:textSize="10sp"
                     tools:ignore="SmallSp" />
